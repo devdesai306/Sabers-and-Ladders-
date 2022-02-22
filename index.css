@@ -1,0 +1,111 @@
+@font-face {
+	font-family: 'HelveticaNowDisplay';
+	src: url('../HelveticaNowDisplay-Black.woff2') format('woff2'), url('../HelveticaNowDisplay-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+html {
+	font-family: 'HelveticaNowDisplay';
+}
+
+body {
+	background-image: url('./assets/bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100% 100%;
+	/* backdrop-filter: blur(20px); */
+}
+
+.container {
+	position: relative;
+	display: flex;
+	text-align: center;
+}
+
+.right-panel {
+	position: absolute;
+	right: 0;
+}
+
+.board-container {
+	max-width: 680px;
+	margin: auto;
+	position: relative;
+}
+
+h1 {
+	font-family: 'HelveticaNowDisplay';
+	text-align: center;
+	/* background-color: black; */
+	background: rgb(0, 0, 0);
+	/* filter: blur(10px); */
+	padding: 6px;
+	color: rgb(255, 255, 255);
+}
+
+.board-background {
+	height: 680px;
+	width: 680px;
+	background-image: url('./assets/light-sabers-and-ladders.png');
+	background-size: 680px 680px;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	float: left;
+	filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+}
+
+#board {
+	height: 680px;
+	width: 680px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#controls {
+	height: 500px;
+	width: 200px;
+	margin-left: 500px;
+	filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+	border-radius: 8px;
+}
+
+.btn {
+	height: 40px;
+	width: 100px;
+	border-radius: 8px;
+	background-color: black;
+	color: rgb(255, 255, 255);
+}
+
+.boardbox {
+	height: 68px;
+	width: 68px;
+	z-index: -1;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.img {
+	height: 45px;
+	width: 50px;
+	margin: 20px 0px 3px 0px;
+}
+
+#dice {
+	height: 100px;
+	width: 100px;
+	font-size: 70px;
+	color: black;
+	margin: auto;
+	border-radius: 8px;
+	background-color: rgb(255, 255, 255);
+}
